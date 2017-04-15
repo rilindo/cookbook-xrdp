@@ -4,7 +4,7 @@ Installs and starts up xrdp, a remote server service for Linux that relys on the
 
 Requirements
 ------------
-Mininum requirements are Ubuntu 12.04 and Fedora 17. For those who wish to contribute, please use ChefSpec for unit testing.
+Mininum requirements are Ubuntu 12.04 and Fedora 17. For those who wish to contribute, please use ChefSpec and Berkshelf for unit testing.
 
 Note that in some cases, the desktop may not comeup when you login. For those on Ubuntu, here is a possible fix:
 
