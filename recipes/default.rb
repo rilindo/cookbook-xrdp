@@ -17,4 +17,4 @@
 # limitations under the License.
 #
 
-include_recipe "xrdp::server"
+include_recipe 'xrdp::server'

@@ -21,7 +21,6 @@ package node['xrdp']['server']['pkg'] do
   :install
 end
 
-
 service node['xrdp']['server']['svc'] do
-  action [ :enable, :start ]
+  action [:enable, :start]
 end

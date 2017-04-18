@@ -1,8 +1,9 @@
 require 'chefspec'
+require 'chefspec/berkshelf'
 
 describe 'xrdp::server' do
   let(:chef_run) {
-    ChefSpec::ChefRunner.new.converge 'xrdp::server'
+    ChefSpec::SoloRunner.new.converge 'xrdp::server'
   }
   
   it 'installs xrdp server' do
@@ -10,10 +11,10 @@ describe 'xrdp::server' do
   end
   
   it 'enables xrdp service' do
-    expect(chef_run).to set_service_to_start_on_boot 'xrdp'
+    expect(chef_run).to enable_service 'xrdp'
   end
   
-  it 'starts xrdp  service' do
+  it 'starts xrdp service' do
     expect(chef_run).to start_service 'xrdp'
   end
 
