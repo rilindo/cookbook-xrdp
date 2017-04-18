@@ -1,7 +1,7 @@
 xrdp CHANGELOG
 ==============
 
-This file is used to list changes made in each version of the xrdp cookbook.
+This file is used to list changes made in each version of the xrdp cookbook. I try to make it current. :)
 
 0.1.0
 -----
