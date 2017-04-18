@@ -1,5 +1,7 @@
 pipeline {
+
   agent any
+
   stages {
     stage('git test') {
       steps {
@@ -30,4 +32,5 @@ pipeline {
       }
     }
   }
+  
 }
