@@ -4,7 +4,7 @@ require 'chefspec/berkshelf'
 describe 'xrdp::default' do
 
   let(:chef_run) do
-    runner = ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '12.04')
+    runner = ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '14.04')
     runner.converge('xrdp::default')
   end
 
@@ -18,7 +18,7 @@ describe 'xrdp::default' do
 
   context 'fedora' do
     let(:chef_run) do
-      runner = ChefSpec::SoloRunner.new('platform' => 'fedora', 'version'=> '19')
+      runner = ChefSpec::SoloRunner.new(platform: 'fedora', version: '24')
       runner.converge('xrdp::default')
     end
 

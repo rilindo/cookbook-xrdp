@@ -3,7 +3,7 @@ require 'chefspec/berkshelf'
 
 describe 'xrdp::server' do
   let(:chef_run) {
-    runner = ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '12.04')
+    runner = ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '14.04')
     runner.converge('xrdp::server')
   }
 
